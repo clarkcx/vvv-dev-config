@@ -28,7 +28,11 @@ Set DEVSITE and EMAIL variables and save the file.
 
 $ vagrant up
 
-The above command takes aaaaagggeeesss to run. Like 20 minutes or more. 
+The above command takes aaaaagggeeesss to run. Like 30 minutes or more. 
+
+$ vagrant reload
+
+The above command is required to get the add the URL to the hosts file
 
 ## Adding additional dev sites
 
