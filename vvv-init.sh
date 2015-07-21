@@ -64,9 +64,9 @@ then
     #rm -rf ./htdocs/wp-content/themes/twenty*
 
     # Install CX plugins
-    git clone https://github.com/clarkcx/cx_contactdeets.git ./htdocs/wp-content/plugins/
-    git clone https://github.com/clarkcx/cx_shortcodes.git ./htdocs/wp-content/plugins/
-    git clone https://github.com/clarkcx/cx_services.git ./htdocs/wp-content/plugins/
+    git clone https://github.com/clarkcx/cx_contactdeets.git ./htdocs/wp-content/plugins/cx_contactdeets
+    git clone https://github.com/clarkcx/cx_shortcodes.git ./htdocs/wp-content/plugins/cx_shortcodes
+    git clone https://github.com/clarkcx/cx_services.git ./htdocs/wp-content/plugins/cx_services
     
     # Change into the `htdocs` folder
     cd htdocs
