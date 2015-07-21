@@ -40,3 +40,14 @@ Make changes to vvv-init.sh and run the following commmands
 
 $ vagrant provision
 $ vagrant reload
+
+## Loging in to Wordpress
+
+- local.whateverthesiteis.dev/wp-login.php
+- admin
+- password
+
+## Loging into the Virtual Server
+
+vagrant ssh
+vagrant ssh
