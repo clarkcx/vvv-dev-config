@@ -67,3 +67,10 @@ Then
 ### Production and Development
 
 The Gruntfile.js example above includes options for production and development environments within Compass. Essentially production compiles the CSS without comments. Just change `compass:dev` to `compass:prod` and vice versa. 
+## Minify CSS
+
+	$ npm install grunt-contrib-cssmin --save-dev
+
+Add this to Gruntfile.js
+
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
