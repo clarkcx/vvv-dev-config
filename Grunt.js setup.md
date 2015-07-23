@@ -7,6 +7,7 @@
 	$ npm install grunt-contrib-compass --save-dev
 	$ npm install grunt-contrib-watch --save-dev
 	$ npm install grunt-contrib-uglify --save-dev
+	$ npm install grunt-contrib-cssmin --save-dev
 
 Create gruntfile.js
 
@@ -24,22 +25,38 @@ Create gruntfile.js
 				prod: {
 					options: {              
 						sassDir: ['sass'],
-						cssDir: ['./'],
+						cssDir: ['css'],
 						environment: 'production'
 					}
 				},
 	
 			},
+			cssmin: {
+				target: {
+					files: [{
+						expand: true,
+						cwd: 'css',
+						src: ['*.css', '!*.min.css'],
+						dest: './',
+						ext: '.css'
+					}]
+				}
+			},
 			watch: {
-				compass: {
+				dev: {
 					files: '**/*.scss',
-					tasks: ['compass:prod']
+					tasks: ['compass:dev']
+				},
+				prod: {
+					files: '**/*.scss',
+					tasks: ['compass:prod','cssmin']
 				}
 			}
 		});
 		grunt.loadNpmTasks('grunt-contrib-compass');
 		grunt.loadNpmTasks('grunt-contrib-watch');
-		grunt.registerTask('default',['watch']);
+		grunt.loadNpmTasks('grunt-contrib-cssmin');
+		grunt.registerTask('default',['watch:prod']);
 	}
 
 Check that Ruby is installed
@@ -67,10 +84,3 @@ Then
 ### Production and Development
 
 The Gruntfile.js example above includes options for production and development environments within Compass. Essentially production compiles the CSS without comments. Just change `compass:dev` to `compass:prod` and vice versa. 
-## Minify CSS
-
-	$ npm install grunt-contrib-cssmin --save-dev
-
-Add this to Gruntfile.js
-
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
