@@ -8,29 +8,29 @@ Install VirtualBox
 
 ## Install Vagrant Plugins (if not already done)
 
-$ vagrant plugin install vagrant-hostsupdater
-$ vagrant plugin install vagrant-triggers
+	$ vagrant plugin install vagrant-hostsupdater
+	$ vagrant plugin install vagrant-triggers
 
 ## Clone VVV to a project folder
 
-$ cd ~/Sites/
-$ git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git vagrant-local
-$ cd ~/Sites/vagrant-local
+	$ cd ~/Sites/
+	$ git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git vagrant-local
+	$ cd ~/Sites/vagrant-local
 
 ## Set up vvv-init.sh script 
 
-$ cp vvv-init.sh ~/Sites/vagrant-local/www
-$ nano vvv-init.sh
+	$ cp vvv-init.sh ~/Sites/vagrant-local/www
+	$ nano vvv-init.sh
 
 Set DEVSITE and EMAIL variables and save the file.
 
 ## Run Vagrant
 
-$ vagrant up
+	$ vagrant up
 
 The above command takes aaaaagggeeesss to run. Like 30 minutes or more. 
 
-$ vagrant reload
+	$ vagrant reload
 
 The above command is required to get the add the URL to the hosts file
 
@@ -38,8 +38,8 @@ The above command is required to get the add the URL to the hosts file
 
 Make changes to vvv-init.sh and run the following commmands
 
-$ vagrant provision
-$ vagrant reload
+	$ vagrant provision
+	$ vagrant reload
 
 ## Loging in to Wordpress
 
@@ -49,5 +49,4 @@ $ vagrant reload
 
 ## Loging into the Virtual Server
 
-vagrant ssh
-vagrant ssh
+	$ vagrant ssh
