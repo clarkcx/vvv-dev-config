@@ -3,8 +3,8 @@ Config instructions to set up Vagrant, VirtualBox and VVV for local Wordpress De
 
 # Install Vagrant, VirtualBox and plugins
 
-Install vagrant
-Install VirtualBox
+- [Install vagrant](https://www.vagrantup.com/downloads.html)
+- [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ## Install Vagrant Plugins (if not already done)
 
