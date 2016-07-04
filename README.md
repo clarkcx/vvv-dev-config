@@ -14,7 +14,7 @@ Config instructions to set up Vagrant, VirtualBox and VVV for local Wordpress De
 ## Clone VVV to a project folder
 
 	$ cd ~/Sites/
-	$ git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git vagrant-local
+	$ git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git ~/Sites/vagrant-local
 	$ cd ~/Sites/vagrant-local
 
 ## Set up vvv-init.sh script 
